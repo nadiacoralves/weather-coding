@@ -24,18 +24,26 @@ function convertToCelsius() {
   let temperature = document.querySelector("#temperature");
   let link = document.querySelector("#celsius");
   link.classList.add("active");
-  //let link = document.querySelector("#fahrenheit");
-  //link.classList.remove("active");
-  temperature.innerHtml = 14; //Not working
+  let fahrenheit = document.querySelector("#fahrenheit");
+  fahrenheit.classList.remove("active");
+  celsius.classList.add("active");
+  temperature.innerHtml = 14;
 }
 
 function convertToFahrenheit() {
   let temperature = document.querySelector("#temperature");
   let link = document.querySelector("#fahrenheit");
   link.classList.add("active");
-  //let link = document.querySelector("#celsius");
-  //link.classList.remove("active");
+  let celsius = document.querySelector("#celsius");
+  celsius.classList.remove("active");
+  fahrenheit.classList.add("active");
   temperature.innerHTML = Math.round((22 * 9) / 5 + 32);
+}
+
+function handleError(error) {
+  if (error.response.status === 404) {
+    alert("This city doesn't exist");
+  }
 }
 
 let celsiusLink = document.querySelector("#celsius");
@@ -66,7 +74,10 @@ function search(event) {
   let apiKey = "c190f24c748e3ec4a42698da3696febd";
   let url = `https://api.openweathermap.org/data/2.5/weather?q=${searchInput.value}&appid=${apiKey}&units=metric`;
 
-  axios.get(url).then(showTemperature);
+  axios
+    .get(url)
+    .then(showTemperature)
+    .catch(handleError);
 }
 
 let searchForm = document.querySelector("#search-form");
