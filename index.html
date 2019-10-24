@@ -4,9 +4,110 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Document</title>
+    <title>Weather</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="Style.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Noto+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
   </head>
   <body>
-    <h1>Hello World</h1>
+    <div
+      class="container border border-primary p-4 mt-3 rounded w-25 h-100 shadow p-3 mb-5 bg-white rounded float"
+    >
+      <div class="row">
+        <div class="col-12">
+          <form id="search-form">
+            <input
+              type="text"
+              placeholder="Search for city..."
+              autocomplete="off"
+              autofocus="on"
+              id="searched-text"
+            />
+            <input type="submit" value="Search" />
+          </form>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col p-4">
+          <h2></h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-6">
+          <h1 id="city">Lisbon</h1>
+        </div>
+        <div class="col p-3 text-left">
+          Mostly Sunny
+        </div>
+      </div>
+      <div class="row">
+        <div class="col p-5">
+          <h1 style="font-size: 90px;">
+            <span id="temperature"></span>
+            <span class="temperature-metric"
+              ><a href="#" id="celsius">ºC</a> |
+              <a href="#" id="fahrenheit">ºF</a></span
+            >
+          </h1>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-2">
+          <h6 class="font-family-sans-serif">Now</h6>
+        </div>
+        <div class="col-1">
+          <h6 class="font-family-sans-serif">11</h6>
+        </div>
+        <div class="col-1">
+          <h6 class="font-family-sans-serif">12</h6>
+        </div>
+        <div class="col-1">
+          <h6 class="font-family-sans-serif">13</h6>
+        </div>
+        <div class="col-1">
+          <h6 class="font-family-sans-serif">14</h6>
+        </div>
+        <div class="col-1">
+          <h6 class="font-family-sans-serif">15</h6>
+        </div>
+        <div class="col-1">
+          <h6 class="font-family-sans-serif">16</h6>
+        </div>
+      </div>
+      <hr />
+      <div class="row mb-5">
+        <div class="col-2">
+          25º
+        </div>
+        <div class="col-1">
+          25º
+        </div>
+        <div class="col-1">
+          26º
+        </div>
+        <div class="col-1">
+          26º
+        </div>
+        <div class="col-1">
+          25º
+        </div>
+        <div class="col-1">
+          25º
+        </div>
+        <div class="col-1">
+          25º
+        </div>
+      </div>
+    </div>
+    <script src="Script.js"></script>
   </body>
 </html>
