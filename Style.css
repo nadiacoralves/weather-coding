@@ -4,6 +4,9 @@ h2 {
 
 body {
   font-family: "Noto Sans", sans-serif;
+}
+
+#background {
   background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
 }
 #temperature {
