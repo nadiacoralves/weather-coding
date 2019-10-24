@@ -3,9 +3,9 @@ let h2 = document.querySelector("h2");
 
 let hours = now.getHours();
 let minutes = now.getMinutes();
-function min() {
-  return (getMinutes() < 10 ? "0" : "") + getMinutes();
-} //Not working.
+if (minutes < 10) {
+  minutes = "0" + minutes;
+}
 
 let days = [
   "Sunday",
