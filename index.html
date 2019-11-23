@@ -17,23 +17,27 @@
       rel="stylesheet"
     />
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script
+      src="https://kit.fontawesome.com/520d896fe5.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <div
-      class="container border border-primary p-4 mt-3 rounded w-25 h-100 shadow p-3 mb-5 bg-white rounded float"
+      class="container border border-primary p-4 mt-3 rounded w-100 h-100 shadow p-3 mb-5 bg-white rounded float"
       id="background"
     >
       <div class="row">
-        <div class="col-12">
+        <div class="col-10">
           <form id="search-form">
             <input
               type="text"
+              class="form-control"
               placeholder="Search for city..."
               autocomplete="off"
-              autofocus="on"
+              autofocus="off"
               id="searched-text"
             />
-            <input type="submit" value="Search" class="form-control-sm" />
           </form>
         </div>
       </div>
@@ -109,15 +113,14 @@
         </div>
       </div>
     </div>
-    <div class="row p-4 mt-2 w-100 h-25 center" id="link">
+    <div class="row p-10 mt-20 w-100 h-25 center" id="link">
       <div class="col-12">
         <small>
           <a
             href="https://github.com/nadiacoralves/weather-coding"
             target="_blank"
-            >Open source-code,</a
+            >Open source-code, by Nádia Correia Gonçalves.</a
           >
-          by Nádia Correia Gonçalves.
         </small>
       </div>
     </div>

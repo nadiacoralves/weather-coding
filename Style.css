@@ -4,14 +4,22 @@ h2 {
 
 body {
   font-family: "Noto Sans", sans-serif;
+  color: white;
+  max-width: 430px;
+  position: relative;
+  margin: 0 auto;
 }
 
 #background {
-  background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
+  background-image: linear-gradient(to bottom, #2a4154 0%, #507da1 100%);
 }
 #temperature {
   font-family: sans-serif;
   font-weight: 400;
+}
+
+#search-form {
+  border-style: unset;
 }
 
 .temperature-metric {
@@ -28,4 +36,20 @@ body {
 .active:hover {
   color: #000000;
   text-decoration: none;
+}
+
+.svg-icon {
+  width: 1em;
+  height: 1em;
+}
+
+.svg-icon path,
+.svg-icon polygon,
+.svg-icon rect {
+  fill: #4691f6;
+}
+
+.svg-icon circle {
+  stroke: #4691f6;
+  stroke-width: 1;
 }
