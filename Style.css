@@ -3,7 +3,9 @@ h2 {
 }
 
 body {
-  font-family: "Noto Sans", sans-serif;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  letter-spacing: 1px;
   color: white;
   max-width: 430px;
   position: relative;
@@ -22,10 +24,15 @@ body {
   border-style: unset;
 }
 
+#city {
+  text-transform: uppercase;
+}
+
 .temperature-metric {
   font-size: 14px;
   position: relative;
   top: -50px;
+  max-width: 200px;
 }
 
 .active {

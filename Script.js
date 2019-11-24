@@ -19,7 +19,6 @@ let days = [
 let day = days[now.getDay()];
 
 h2.innerHTML = `${day},    ${hours}:${minutes}`;
-//p.innerHTML = { showTemperature };
 
 function convertToCelsius() {
   let temperature = document.querySelector("#temperature");
