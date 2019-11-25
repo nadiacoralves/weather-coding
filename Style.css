@@ -27,6 +27,15 @@ ul p {
   font-size: 12px;
 }
 
+a {
+  color: white;
+}
+
+a:hover {
+  color: #999;
+  text-decoration: none;
+}
+
 #pressureName {
   color: rgb(117, 117, 117);
 }
