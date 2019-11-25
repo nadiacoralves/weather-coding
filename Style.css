@@ -28,7 +28,7 @@ ul p {
 }
 
 #background {
-  background-image: linear-gradient(to bottom, #2a4154 0%, #507da1 100%);
+  background-image: linear-gradient(to bottom, #333333 0%, #cccccc 100%);
 }
 #temperature {
   font-family: sans-serif;

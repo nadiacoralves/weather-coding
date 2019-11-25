@@ -40,11 +40,20 @@ function showTemperature(response) {
   temperatureElement.innerHTML = Math.round(response.data.main.temp);
 }
 
-let apiKey = "c190f24c748e3ec4a42698da3696febd";
-let city = "New York";
-let url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
+function search(city) {
+  let apiKey = "c190f24c748e3ec4a42698da3696febd";
+  let url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
 
-axios
-  .get(url)
-  .then(showTemperature)
-  .catch(handleError);
+  axios.get(url).then(showTemperature);
+}
+
+function handleSubmit(event) {
+  event.preventDefault();
+  let cityInputElement = document.querySelector("#city-input");
+  search(cityInputElement.value);
+}
+
+search("New York");
+
+let form = document.querySelector("#search-form");
+form.addEventListener("submit", handleSubmit);
