@@ -5,11 +5,26 @@ h2 {
 body {
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
-  letter-spacing: 2px;
-  color: white;
+  letter-spacing: 4px;
+  color: #f8f9fa;
   max-width: 430px;
   position: relative;
   margin: 0 auto;
+}
+
+ul {
+  font-weight: 300;
+  text-transform: capitalize;
+  font-size: 17px;
+  color: #999;
+  letter-spacing: 2px;
+  position: relative;
+}
+
+ul p {
+  color: white;
+  padding: 2px;
+  font-size: 12px;
 }
 
 #background {
@@ -17,15 +32,14 @@ body {
 }
 #temperature {
   font-family: sans-serif;
-  font-weight: 400;
-}
-
-#search-form {
-  border-style: unset;
+  font-weight: 200;
 }
 
 #city {
   text-transform: uppercase;
+  padding-left: 4%;
+  font-weight: 800;
+  font-size: 2.5rem;
 }
 
 #description {
@@ -33,13 +47,24 @@ body {
   font-weight: 100;
   font-size: 12px;
   text-transform: uppercase;
+  margin-top: -25px;
+}
+
+#link {
+  font-size: 10px;
+}
+
+.form-control {
+  font-size: 14px;
+  border: none;
+  padding-bottom: 2%;
 }
 
 .temperature-metric {
   font-size: 14px;
   position: relative;
   top: -50px;
-  max-width: 200px;
+  max-width: 100px;
 }
 
 .active {
@@ -50,20 +75,4 @@ body {
 .active:hover {
   color: #000000;
   text-decoration: none;
-}
-
-.svg-icon {
-  width: 1em;
-  height: 1em;
-}
-
-.svg-icon path,
-.svg-icon polygon,
-.svg-icon rect {
-  fill: #4691f6;
-}
-
-.svg-icon circle {
-  stroke: #4691f6;
-  stroke-width: 1;
 }

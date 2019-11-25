@@ -28,44 +28,66 @@
       id="background"
     >
       <div class="row">
-        <div class="col-10">
+        <div class="col-8 p-4 mt-2 ml-0">
           <form id="search-form">
-            <input
-              type="text"
-              class="form-control"
-              placeholder="Search for city..."
-              autocomplete="off"
-              autofocus="off"
-              id="searched-text"
-            />
+            <div class="">
+              <input
+                type="text"
+                class="form-control"
+                name="city"
+                placeholder="Search for city..."
+                autocomplete="off"
+                autofocus="off"
+                id="searched-text"
+              />
+            </div>
           </form>
         </div>
       </div>
       <div class="row">
-        <div class="col p-4">
+        <div class="col p-4 ml-2">
           <h2></h2>
         </div>
       </div>
+
       <div class="row">
-        <div class="col-6">
-          <h1 id="city">Lisbon</h1>
+        <div class="col-10 ">
+          <h1 id="city"></h1>
+
+          <div class="row">
+            <div class="col-12 p-4 ml-2 text-left" id="description">
+            </div>
+          </div>
         </div>
       </div>
       <div class="row">
-        <div class="col-6 p-4 text-left" id="description">
-          Mostly Sunny
-        </div>
-      </div>
-      <div class="row">
-        <div class="col p-10">
-          <p style="font-size: 90px;">
-            <span id="temperature"></span>
+        <div class="col-6 ">
+
+            <span id="temperature" style="font-size: 90px;"></span>
             <span class="temperature-metric"
-              ><a href="#" id="celsius">ºC</a> |
-              <a href="#" id="fahrenheit">ºF</a></span
-            >
-          </p>
+              ><a href="#" id="celsius">ºC</a>|<a href="#" id="fahrenheit">ºF</a></span>
+
+            <img src="/" alt="clear" class="foat-left ml-2" id="icon" />
+
         </div>
+        <div class="col-6">
+          <ul style="list-style: none;">
+            <li>
+              Wind
+              <p><span id="wind" style="font-size: 17px;"></span> km/h</p>
+            </li>
+            <li>
+              Humidity
+              <p><span id="humidity" style="font-size: 17px;"></span> %</p>
+            </li>
+            <li>
+              Pressure
+              <p><span id="pressure" style="font-size: 17px;"></span> sPa</p>
+            </li>
+          </ul>
+      </div>
+      <div class="row">
+        <div class="col-6"></div>
       </div>
       <div class="row">
         <div class="col-2">
@@ -115,8 +137,10 @@
         </div>
       </div>
     </div>
+
+    </div>
     <div class="row p-10 mt-20 w-100 h-25 center" id="link">
-      <div class="col-12">
+      <div class="col-10">
         <small>
           <a
             href="https://github.com/nadiacoralves/weather-coding"
@@ -125,7 +149,6 @@
           >
         </small>
       </div>
-    </div>
 
     <script src="Script.js"></script>
   </body>
