@@ -37,6 +37,16 @@ a:hover {
   text-decoration: none;
 }
 
+a.source {
+  color: #999;
+}
+
+a.source:hover {
+  color: rgb(25, 0, 255);
+  text-decoration: none;
+  cursor: pointer;
+}
+
 #pressureName {
   color: rgb(117, 117, 117);
 }
