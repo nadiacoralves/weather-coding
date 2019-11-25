@@ -47,6 +47,14 @@ a.source:hover {
   cursor: pointer;
 }
 
+hr {
+  color: white;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  background-color: white;
+  display: block;
+}
+
 #pressureName {
   color: rgb(117, 117, 117);
 }
@@ -61,6 +69,7 @@ a.source:hover {
 #temperature {
   font-family: sans-serif;
   font-weight: 200;
+  margin-left: 25px;
 }
 
 #city {
@@ -98,4 +107,8 @@ a.source:hover {
 
 .active {
   color: white;
+}
+
+.forecast {
+  margin-top: 10px;
 }

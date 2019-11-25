@@ -24,7 +24,7 @@
   </head>
   <body>
     <div
-      class="container border border-primary p-10 mt-3 rounded w-100 h-500 shadow p-3 mb-5 bg-white rounded float"
+      class="container border-primary p-10 mt-3 rounded w-100 h-500 shadow p-3 mb-5 bg-white rounded float"
       id="background"
     >
       <div class="row">
@@ -57,15 +57,13 @@
           </div>
         </div>
       </div>
-      <div class="row">
-        <div class="col-6 ">
-
+      <div class="row temperature-container">
+        <div class="col-6">
             <span id="temperature" style="font-size: 90px;"></span>
             <span class="temperature-metric"
               ><a href="#" id="celsius-link" class="active">ºC</a>|<a href="#" id="fahrenheit-link">ºF</a></span>
 
             <img src="/" alt="clear" class="foat-left ml-2" id="icon" />
-
         </div>
         <div class="col-6">
           <ul style="list-style: none;">
@@ -84,53 +82,38 @@
           </ul>
       </div>
       <div class="row">
-        <div class="col-6"></div>
+        <hr style="color:white;">
       </div>
-      <div class="row">
+      <div class="row forecast p-4">
+       <div class="col-2">
+          <h6 class="font-family-sans-serif">SUN</h6>
+          <img scr="http://openweathermap.org/img/wn/10d@2x.png" alt="" />
+          <div class="forecast-temperature">25°</div>
+        </div>
         <div class="col-2">
-          <h6 class="font-family-sans-serif">Now</h6>
+          <h6 class="font-family-sans-serif">MON</h6>
+          <img scr="http://openweathermap.org/img/wn/10d@2x.png" alt="" />
+          <div class="forecast-temperature">25°</div>
         </div>
-        <div class="col-1">
-          <h6 class="font-family-sans-serif">11</h6>
-        </div>
-        <div class="col-1">
-          <h6 class="font-family-sans-serif">12</h6>
-        </div>
-        <div class="col-1">
-          <h6 class="font-family-sans-serif">13</h6>
-        </div>
-        <div class="col-1">
-          <h6 class="font-family-sans-serif">14</h6>
-        </div>
-        <div class="col-1">
-          <h6 class="font-family-sans-serif">15</h6>
-        </div>
-        <div class="col-1">
-          <h6 class="font-family-sans-serif">16</h6>
-        </div>
-      </div>
-      <hr />
-      <div class="row mb-5">
         <div class="col-2">
-          25º
+          <h6 class="font-family-sans-serif">TUE</h6>
+          <img scr="http://openweathermap.org/img/wn/10d@2x.png" alt="" />
+          <div class="forecast-temperature">25°</div>
         </div>
-        <div class="col-1">
-          25º
+        <div class="col-2">
+          <h6 class="font-family-sans-serif">WED</h6>
+          <img scr="http://openweathermap.org/img/wn/10d@2x.png" alt="" />
+          <div class="forecast-temperature">25°</div>
         </div>
-        <div class="col-1">
-          26º
+        <div class="col-2">
+          <h6 class="font-family-sans-serif">THU</h6>
+          <img scr="http://openweathermap.org/img/wn/10d@2x.png" alt="" />
+          <div class="forecast-temperature">25°</div>
         </div>
-        <div class="col-1">
-          26º
-        </div>
-        <div class="col-1">
-          25º
-        </div>
-        <div class="col-1">
-          25º
-        </div>
-        <div class="col-1">
-          25º
+        <div class="col-2">
+          <h6 class="font-family-sans-serif">FRI</h6>
+          <img scr="http://openweathermap.org/img/wn/10d@2x.png" alt="" />
+          <div class="forecast-temperature">25°</div>
         </div>
       </div>
     </div>
