@@ -29,6 +29,7 @@ ul p {
 
 a {
   color: white;
+  cursor: default;
 }
 
 a:hover {
@@ -85,11 +86,5 @@ a:hover {
 }
 
 .active {
-  color: #000000;
-  cursor: pointer;
-}
-
-.active:hover {
-  color: #000000;
-  text-decoration: none;
+  color: #999;
 }
