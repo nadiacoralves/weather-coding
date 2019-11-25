@@ -27,6 +27,14 @@ ul p {
   font-size: 12px;
 }
 
+#pressureName {
+  color: rgb(117, 117, 117);
+}
+
+#humidityName {
+  color: rgb(124, 124, 124);
+}
+
 #background {
   background-image: linear-gradient(to bottom, #333333 0%, #cccccc 100%);
 }
