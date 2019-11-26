@@ -95,10 +95,6 @@ hr {
   font-size: 10px;
 }
 
-#next-hours {
-  margin: 4px;
-}
-
 .form-control {
   font-size: 14px;
   border: none;
@@ -117,10 +113,10 @@ hr {
 }
 
 .forecast {
-  margin: -2px 0 auto 4px;
-  padding-right: 50px;
+  margin: 0 auto;
   display: block;
   text-align: center;
+  margin-left: -4px;
 }
 
 .forecast-temperature {
