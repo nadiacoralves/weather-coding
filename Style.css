@@ -53,8 +53,9 @@ a.source:hover {
 
 hr {
   background-color: white;
-  display: block;
   overflow: visible;
+  display: block;
+  margin: 5px;
 }
 
 #pressureName {
@@ -115,6 +116,7 @@ hr {
   display: block;
   text-align: center;
   margin-left: -4px;
+  margin-top: -4px;
 }
 
 .forecast-temperature {

@@ -68,6 +68,7 @@ function showForecast(response) {
 
     forecastElement.innerHTML += `
   <div class="col-2 forecast">
+
           <h6 class="font-family-sans-serif">${formatHours(
             forecast.dt * 1000
           )}</h6>
