@@ -62,6 +62,7 @@ function formatHours(timestamp) {
 function showForecast(response) {
   let forecastElement = document.querySelector("#next-hours");
   let forecast = null;
+  forecastElement.innerHTML = null;
 
   for (let index = 0; index < 5; index++) {
     forecast = response.data.list[index];
