@@ -94,6 +94,10 @@ hr {
   font-size: 10px;
 }
 
+#search-form {
+  opacity: 0.25;
+}
+
 .form-control {
   font-size: 14px;
   border: none;
