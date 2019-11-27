@@ -52,11 +52,9 @@ a.source:hover {
 }
 
 hr {
-  color: white;
-  margin-top: 1em;
-  margin-bottom: 1em;
   background-color: white;
   display: block;
+  overflow: visible;
 }
 
 #pressureName {

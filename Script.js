@@ -61,43 +61,12 @@ function formatHours(timestamp) {
 
 function showForecast(response) {
   let forecastElement = document.querySelector("#next-hours");
-  let forecast = response.data.list[0];
-  console.log(forecast);
-  forecastElement.innerHTML = `
-  <div class="col-2 forecast">
-          <h6 class="font-family-sans-serif">${formatHours(
-            forecast.dt * 1000
-          )}</h6>
-          <img scr="http://openweathermap.org/img/wn/${
-            forecast.weather[0].icon
-          }@2x.png" />
-          <div class="forecast-temperature">${Math.round(
-            (forecast.main.temp_max + forecast.main.temp_min) / 2
-          )}°</div>
-        </div>
-        `;
+  let forecast = null;
 
-  forecast = response.data.list[1];
-  forecastElement.innerHTML =
-    forecastElement.innerHTML +
-    `
-  <div class="col-2 forecast">
-          <h6 class="font-family-sans-serif">${formatHours(
-            forecast.dt * 1000
-          )}</h6>
-          <img scr="http://openweathermap.org/img/wn/${
-            forecast.weather[0].icon
-          }@2x.png" />
-          <div class="forecast-temperature">${Math.round(
-            (forecast.main.temp_max + forecast.main.temp_min) / 2
-          )}°</div>
-        </div>
-        `;
+  for (let index = 0; index < 5; index++) {
+    forecast = response.data.list[index];
 
-  forecast = response.data.list[2];
-  forecastElement.innerHTML =
-    forecastElement.innerHTML +
-    `
+    forecastElement.innerHTML += `
   <div class="col-2 forecast">
           <h6 class="font-family-sans-serif">${formatHours(
             forecast.dt * 1000
@@ -110,40 +79,7 @@ function showForecast(response) {
           )}°</div>
         </div>
         `;
-
-  forecast = response.data.list[3];
-  forecastElement.innerHTML =
-    forecastElement.innerHTML +
-    `
-  <div class="col-2 forecast">
-          <h6 class="font-family-sans-serif">${formatHours(
-            forecast.dt * 1000
-          )}</h6>
-          <img scr="http://openweathermap.org/img/wn/${
-            forecast.weather[0].icon
-          }@2x.png" />
-          <div class="forecast-temperature">${Math.round(
-            (forecast.main.temp_max + forecast.main.temp_min) / 2
-          )}°</div>
-        </div>
-        `;
-
-  forecast = response.data.list[4];
-  forecastElement.innerHTML =
-    forecastElement.innerHTML +
-    `
-  <div class="col-2 forecast">
-          <h6 class="font-family-sans-serif">${formatHours(
-            forecast.dt * 1000
-          )}</h6>
-          <img scr="http://openweathermap.org/img/wn/${
-            forecast.weather[0].icon
-          }@2x.png" />
-          <div class="forecast-temperature">${Math.round(
-            (forecast.main.temp_max + forecast.main.temp_min) / 2
-          )}°</div>
-        </div>
-        `;
+  }
 }
 function search(city) {
   let apiKey = "c190f24c748e3ec4a42698da3696febd";
