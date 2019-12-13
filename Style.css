@@ -170,4 +170,10 @@ forecast.img {
     margin-top: -25px;
     margin-left: -2px;
   }
+  #fahrenheit-link {
+    color: #838282;
+  }
+  #metric-separation {
+    color: #838282;
+  }
 }
