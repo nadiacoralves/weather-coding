@@ -92,10 +92,15 @@ hr {
 
 #link {
   font-size: 10px;
+  text-align: center;
 }
 
 #search-form {
   opacity: 0.25;
+}
+
+.container {
+  padding: 10px;
 }
 
 .form-control {
@@ -106,7 +111,8 @@ hr {
 .temperature-metric {
   font-size: 14px;
   position: relative;
-  top: -50px;
+  top: 50px;
+  padding: 25px;
   max-width: 100px;
   color: #999;
 }
@@ -133,4 +139,24 @@ forecast.img {
   margin: 0 auto;
   height: 48px;
   width: 48px;
+}
+
+@media only screen and (max-width: 768px), (min-height: 600px) {
+  body {
+    background-color: #d3d3d3;
+    width: 90%;
+    height: 80%;
+  }
+  div h6 {
+    font-size: 10px;
+  }
+  div ul {
+    font-size: 12px;
+  }
+  div .temperature-metric {
+    font-size: 14px;
+    position: relative;
+    right: -34px;
+    padding: 14px;
+  }
 }
