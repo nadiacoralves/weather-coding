@@ -147,7 +147,7 @@ forecast.img {
     width: 90%;
   }
   div.container {
-    height: 634px;
+    height: 600px;
   }
   div h6 {
     font-size: 10px;
@@ -160,5 +160,9 @@ forecast.img {
     position: relative;
     right: -40px;
     padding: 14px;
+  }
+  div.forecast-temperature {
+    margin-top: -25px;
+    margin-left: -2px;
   }
 }
