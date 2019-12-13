@@ -152,6 +152,9 @@ forecast.img {
   div h6 {
     font-size: 10px;
   }
+  div h2 {
+    margin-top: -14px;
+  }
   div ul {
     font-size: 12px;
   }
