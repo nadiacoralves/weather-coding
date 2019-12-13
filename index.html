@@ -20,20 +20,20 @@
   </head>
   <body>
     <div
-      class="container border-primary p-10 mt-3 rounded w-100 h-500 shadow p-3 mb-5 bg-white rounded float"
+      class="container border-primary p-10 mt-3 rounded w-100 h-500 shadow-lg p-3 mb-5 bg-white rounded float"
       id="background"
     >
       <div class="row">
         <div class="col-8 p-4 ml-0">
           <form id="search-form">
-              <input
-                type="search"
-                class="form-control"
-                placeholder="Search for city..."
-                autocomplete="off"
-                autofocus="off"
-                id="search-input"
-              />
+            <input
+              type="search"
+              class="form-control"
+              placeholder="Search for city..."
+              autocomplete="off"
+              autofocus="off"
+              id="search-input"
+            />
           </form>
         </div>
       </div>
@@ -48,30 +48,28 @@
           <h1 id="city"></h1>
 
           <div class="row">
-            <div class="col-12 p-4 ml-2 text-left" id="description">
-            </div>
+            <div class="col-12 p-4 ml-2 text-left" id="description"></div>
           </div>
         </div>
       </div>
       <div class="row temperature-container">
         <div class="col-6">
           <div class="row">
-
             <div class="col-6">
-            <span id="temperature" style="font-size: 90px;"></span>
+              <span id="temperature" style="font-size: 90px;"></span>
             </div>
 
-           <div class="row">
-            <div class="col-12">
-            <span class="temperature-metric"
-              ><a href="#" id="celsius-link" class="active">ºC</a><span id="metric-separation">|</span><a href="#" id="fahrenheit-link">ºF</a></span>
+            <div class="row">
+              <div class="col-12">
+                <span class="temperature-metric"
+                  ><a href="#" id="celsius-link" class="active">ºC</a
+                  ><span id="metric-separation">|</span
+                  ><a href="#" id="fahrenheit-link">ºF</a></span
+                >
+              </div>
             </div>
-           </div>
-
-
-
           </div>
-            <img src="/" alt="clear" class="foat-left ml-2" id="icon" />
+          <img src="/" alt="clear" class="foat-left ml-2" id="icon" />
         </div>
         <div class="col-6">
           <ul style="list-style: none;">
@@ -90,23 +88,24 @@
           </ul>
         </div>
         <div class="col-12">
-          <hr>
+          <hr />
         </div>
-      <div class="row p-4 next-hours" id="next-hours">
+        <div class="row p-4 next-hours" id="next-hours"></div>
       </div>
     </div>
 
-    </div>
     <div class="row mt-20 h-25 center" id="link">
       <div class="col-12">
         <small>
-          <a class="col-12 source"
+          <a
+            class="col-12 source"
             href="https://github.com/nadiacoralves/weather-coding"
             target="_blank"
             >Open source-code, by Nádia Correia Gonçalves.</a
           >
         </small>
       </div>
+    </div>
 
     <script src="Script.js"></script>
   </body>
