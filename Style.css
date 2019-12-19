@@ -32,7 +32,7 @@ ul p {
 }
 
 a {
-  color: #999;
+  color: #888888;
   cursor: default;
 }
 
@@ -112,10 +112,10 @@ hr {
   font-size: 14px;
   position: relative;
   top: 50px;
-  left: 40px;
+  left: 70px;
   padding: 25px;
   max-width: 100px;
-  color: rgb(158, 157, 157);
+  color: rgb(140, 140, 140);
 }
 
 .active {
@@ -161,9 +161,9 @@ forecast.img {
   }
   div .temperature-metric {
     font-size: 14px;
-    position: relative;
-    right: 50px;
-    left: 50px;
+    position: absolute;
+    top: 150px;
+    left: 100px;
     padding: 14px;
   }
   div.forecast-temperature {
@@ -171,9 +171,15 @@ forecast.img {
     margin-left: -2px;
   }
   #fahrenheit-link {
-    color: #838282;
+    color: #a5a5a5;
   }
   #metric-separation {
-    color: #838282;
+    color: #a3a1a1;
+  }
+  #temperature {
+    top: -100px;
+  }
+  #description {
+    font-size: 10px;
   }
 }
