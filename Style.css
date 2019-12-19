@@ -115,7 +115,7 @@ hr {
   left: 40px;
   padding: 25px;
   max-width: 100px;
-  color: #999;
+  color: rgb(158, 157, 157);
 }
 
 .active {
