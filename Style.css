@@ -170,13 +170,13 @@ forecast.img {
     margin-left: -2px;
   }
   #fahrenheit-link {
-    color: #a5a5a5;
+    color: #a3a1a1;
   }
   #metric-separation {
     color: #a3a1a1;
   }
   #temperature {
-    top: -100px;
+    top: -px;
   }
   #description {
     font-size: 10px;
